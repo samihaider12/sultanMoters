@@ -9,7 +9,7 @@ import { RouterLink } from 'vue-router';
     <div class="row">
 
                   <!--Car 1 Sale  -->
-       <router-link to="/bike"  class="col-6 card"> 
+       <router-link to="/car"  class="col-md-6  card"> 
           <img src="../views/car1.jpg" alt="">  
           <b>Can you Buy  then Click me</b>
         <h5 class="lead">Honda Civic = 1800cc </h5>
@@ -18,7 +18,7 @@ import { RouterLink } from 'vue-router';
   
         
                         <!-- Car  2 Perchase Card -->
-        <router-link to="/bike"  class="col-6 card"> 
+        <router-link to="/SaleProduct"  class="col-md-6  card"> 
           <img src="../views/car2.jpg" alt="">
           <b>Can you Sale Cars then Click me</b>
           <h5 class="lead">Me Buy your Cars</h5>
@@ -27,7 +27,7 @@ import { RouterLink } from 'vue-router';
 
 
        <!--4x4 1 Sale  -->
-       <router-link to="/bike"  class="col-6 card"> 
+       <router-link to="/car4x4"  class="col-md-6  card"> 
           <img src="../views/4x42.jpg" alt="">  
           <b>Can you Buy  then Click me</b>
         <h5 class="lead">Best 4x4 SUVs In The UAE </h5>
@@ -36,7 +36,7 @@ import { RouterLink } from 'vue-router';
   
         
                         <!-- 4x4  2 Perchase Card -->
-        <router-link to="/bike"  class="col-6 card"> 
+        <router-link to="/SaleProduct"  class="col-md-6  card"> 
           <img src="../views/4x44.jpg" alt="">
           <b>Can you Sale 4x4 then Click me</b>
           <h5 class="lead">Me Buy your 4x4</h5>
@@ -46,7 +46,7 @@ import { RouterLink } from 'vue-router';
 
        
        <!--Bus 1 Sale  -->
-       <router-link to="/bus"  class="col-6 card"> 
+       <router-link to="/bus"  class="col-md-6  card"> 
           <img src="../views/bus1.jpg" alt="">  
           <b>Can you Buy  then Click me</b>
         <h5 class="lead">Best Buses </h5>
@@ -55,7 +55,7 @@ import { RouterLink } from 'vue-router';
   
         
                         <!-- Bus  2 Perchase Card -->
-        <router-link to="/bus"  class="col-6 card"> 
+        <router-link to="/SaleProduct"  class="col-md-6  card"> 
           <img src="../views/bus2.jpg" alt="">
           <b>Can you Sale Bus then Click me</b>
           <h5 class="lead">Me Buy your Bus</h5>
@@ -65,7 +65,7 @@ import { RouterLink } from 'vue-router';
 
                               <!-- bike 1 Sale Product-->
                           
-<router-link to="/bike"  class="col-6 card"> 
+<router-link to="/bike"  class="col-md-6  card"> 
           <img src="../views/bike1.jpg" alt="">  
           <b>Are you Sale Bike then Click me</b>
         <h5 class="lead">Honda Company Bike = 125cc </h5>
@@ -74,7 +74,7 @@ import { RouterLink } from 'vue-router';
   
         
                         <!-- bike 2 Perchase product -->
-        <router-link to="/bike"  class="col-6 card"> 
+        <router-link to="/SaleProduct"  class="col-md-6  card"> 
           <img src="../views/bike2.jpg" alt="">
           <p>You Perchase Bike then Click me</p>
           <h5 class="lead">Honda Company Bike = 70cc </h5>
