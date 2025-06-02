@@ -6,10 +6,10 @@
   
   <div class="container " >
    <div class="row">
-    <div class="col-6  ">
+    <div class="col-sm-6 col-md-6 col-lg-4  ">
          <img src="../images/icon.png" alt="" class="text-center mb-4"> 
     </div>
-    <div class="col-6  mt-3 text-center">
+    <div class="col-sm-6 col-md-6 col-lg-4  mt-3 text-center">
           <h3 class="card-title">WelCome to SultanMotors</h3>
           <h3 class="text-success"> Proud Of 25 Years</h3>
     </div>

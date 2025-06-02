@@ -29,18 +29,44 @@
       </div>
 
       <div class="col-md-6">
-        <h5 class="mt-3">Get in Touch</h5>
+        <h5 class="">
+        <img src="../images/icon.png" alt="Contact" class="img-fluid rounded mt-3" />
+
+        </h5>
         <p><strong>Email:</strong> sultanmotors@gmail.com</p>
         <p><strong>Phone:</strong> <a href="">+92 324 2728172</a></p>
         <p><strong>Address:</strong> Shahi Road Car Street, Lahore, Pakistan</p>
-        <!-- <img src="../views/contact.jpg" alt="Contact" class="img-fluid rounded mt-3" /> -->
+         <a
+    :href="`https://wa.me/${phoneNumber}?text=${encodeURIComponent(`Hello, I want to contact you`)}`"
+    target="_blank"
+    class="btn btn-outline-success"
+    id="btn"
+  >
+      WhatsApp
+  </a> 
+   <a
+    :href="`https://www.facebook.com/profile.php?id=61573194894797`"
+    target="_blank"
+    class="btn m-3 btn-outline-primary"
+    id="btn"
+  >
+     FaceBook
+  </a> 
+   <a
+    :href="`https://www.instagram.com/mr.s7t2/#`"
+    target="_blank"
+    class="btn btn-outline-danger"
+    id="btn"
+  >
+     Instagram
+  </a> 
       </div>
     </div>
   </div>
 </template>
 <script setup>
 import { ref } from 'vue';
-
+   let phoneNumber=+923242728172;
 // const name = ref('');
 const email = ref('');
 const message = ref('');
