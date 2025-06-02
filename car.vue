@@ -46,8 +46,8 @@ const products = ref([
     image:'car2.jpg',
   },
   {
-    name: 'Automart: Cars ',
-    PKR:  '  2 Million',
+    name: 'Automart: car prices in Karachi ',
+    PKR:  ' Markets - Business Recorder',
     image:'car3.jpg',
   },
   {
@@ -61,8 +61,8 @@ const products = ref([
     image: 'car5.jpg',
   },
   {
-    name: 'Temerario',
-    PKR: ' 90 Million',
+    name: 'Super Star 2020',
+    PKR: '  210,000 Lac',
     image: 'car6.jpg',
   },
    

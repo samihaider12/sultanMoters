@@ -1,48 +1,43 @@
-<!-- <script setup>
-import { RouterLink, RouterView } from 'vue-router';
-
-</script>
-
+ 
 <template>
-<nav>
-  <RouterLink to="/">Home</RouterLink>
-  <RouterLink to="/about">About</RouterLink>
-  <RouterLink to="/contact">Contact</RouterLink>
-  <RouterLink to="/post">Post</RouterLink>
-</nav>
-  <RouterView />
-</template>
-
-<style scoped></style> -->
-
-<template>
-  <div>
+  
+   <div> 
     <Navbar :isOpen="sidebarOpen" @toggle-sidebar="toggleSidebar" />
     <Sidebar :isOpen="sidebarOpen" />
     <Sidebar :isOpen="sidebarOpen" @close-sidebar="sidebarOpen = false" />
-    <div :class="['main-content p-4', sidebarOpen ? 'with-sidebar' : '']">
+    <div :class="['main-content p-4', sidebarOpen ? 'with-sidebar' : '']">   
       <router-view />
     </div>
-  </div>
+   </div>
+  
+  
+<FooterCompon />  
+ 
+  
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import Navbar from './components/Navbar.vue'
-import Sidebar from './components/Sidebar.vue'
-
+import { ref ,watch } from 'vue';
+import Navbar from './components/Navbar.vue';
+import Sidebar from './components/SideBar.vue';
+import FooterCompon from './components/FooterCompon.vue';
+ 
 const sidebarOpen = ref(false)
 
 function toggleSidebar() {
   sidebarOpen.value = !sidebarOpen.value
-}
+};
+ 
+
 </script>
 
 <style scoped>
 .main-content {
   transition: margin-left 0.4s ease-in-out;
+  padding: 0;
 }
 .with-sidebar {
   margin-left: 250px;
 }
+
 </style>

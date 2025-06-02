@@ -1,7 +1,7 @@
 <template>
-  <div class="container bg-dark">
-    <div class="row">
-      <div class="col-4 offset-4">
+  <div class="container" style="margin-top: 60px;">
+    <div class="row justify-content-center">
+      <div class="col-4 ">
         <form @submit.prevent="handleSubmit" id="myForm">
           <h3 class="text-center py-5">Login Form</h3>
 
@@ -36,16 +36,17 @@
             <small>{{ passwordError }}</small>
           </p>
 
-          <div class="form-check my-2">
-            <input type="checkbox" class="form-check-input" id="new" />
-            <label class="form-check-label" for="new">Get New</label>
-            <a href="">Forgot password</a>
-          </div>
+                 <!-- Forgote password -->
+                         <div class="form-check my-2">
+                        <a href="" class="forgot">Forgote password</a>
+                    </div>
+
+                    <!-- Login Button -->
 
           <div class="col m-5 d-grid gap-2">
             <button class="btn btn-primary">Login</button>
           </div>
-           <router-link to="/SignUp">New Registration</router-link>
+           <router-link to="/SignUp" class="m-3 ">New Registration</router-link>
            
         </form>
       </div>
@@ -80,7 +81,7 @@ const handleSubmit = () => {
   if (!isPasswordValid) {
     passwordError.value =
       'Password must be at least 5 characters and include 2 special characters';
-  }
+  } 
 
   if (isEmailValid && isPasswordValid) {
     const userData = [{ email: email.value, password: password.value }];
@@ -113,10 +114,10 @@ body {
 
 .col-4 {
   border: 1px solid white;
-  height: 500px;
+  min-height: 500px;
   width: 384px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.5);
+  background:  rgb(181, 174, 174);
 }
 
 a {
@@ -141,5 +142,9 @@ a {
   font-size: 0.9rem;
   cursor: pointer;
   color: #007bff;
+}
+ 
+ .forgot{
+  margin-left: -20px;
 }
 </style>

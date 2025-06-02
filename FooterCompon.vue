@@ -26,13 +26,13 @@
               <router-link to="/" class="nav-link  "> 
                 <p class="my-0 column-one-link-one"><a href="#">Home</a></p>
               </router-link>
-              <router-link to="/" class="nav-link  ">
+              <router-link to="/about" class="nav-link  ">
                 <p class="my-0 column-one-link-two"><a href="#">AboutUs</a></p>
               </router-link>
               <router-link to="/" class="nav-link  ">
                 <p class="my-0 column-one-link-three"><a href="#">Services</a></p>
               </router-link>
-              <router-link to="/" class="nav-link  ">
+              <router-link to="/contact" class="nav-link  ">
                 <p class="my-0 column-one-link-four"><a href="#">Contact</a></p>
               </router-link>
 

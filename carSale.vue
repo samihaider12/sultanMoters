@@ -33,7 +33,7 @@
         <p class="card-text">{{ product.text }} </p>
         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur facilis illo, aut repudiandae quae ullam fugiat ratione, error a fugit aliquid voluptates minus quas possimus aperiam quo cum at dignissimos.</p>
         <p class="card-text"><small class="text-muted"> {{ product.city }} 
-          <router-link to="/pament">
+          <router-link to="/Signup" >
              <button class="btn">Online Pament</button>
           </router-link>
        <a

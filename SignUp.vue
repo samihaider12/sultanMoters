@@ -1,9 +1,9 @@
 <template>
-  <div class="container bg-dark">
-    <div class="row">
-      <div class="col-4 offset-4">
+  <div class="container " style="margin-top: 60px;">
+    <div class="row justify-content-center">
+      <div class="col-4 ">
         <form @submit.prevent="handleSubmit" id="myForm1">
-          <h3 class="text-center py-5">Login Form</h3>
+          <h3 class="text-center py-5">SignUp Form</h3>
 
           <!-- Username -->
           <label class="py-2">User Name</label>
@@ -49,28 +49,26 @@
             <small>{{ passwordError }}</small>
           </p>
 
-          <!-- Checkbox and Link -->
-          <div class="form-check my-2 d-flex justify-content-between align-items-center">
-            <div>
-              <input type="checkbox" class="form-check-input" id="new" />
-              <label class="form-check-label" for="new">Get New</label>
-            </div>
-            <a href="#">Forgot password</a>
-          </div>
+          <!-- Forgote password -->
+                         <div class="form-check my-2">
+                        <a href="" class="forgot">Forgote password</a>
+                    </div>
 
           <!-- Submit -->
           <div class="col m-5 d-grid gap-2">
-            <button type="submit" class="btn btn-primary">Sign up</button>
+            <button @click="handleSubmit" type="submit" class="btn btn-primary">Sign up</button>
           </div>
         </form>
       </div>
     </div>
   </div>
+
+   
 </template>
 
 <script setup>
 import { ref } from 'vue';
-
+ 
 const user = ref('');
 const email = ref('');
 const password = ref('');
@@ -105,10 +103,11 @@ const handleSubmit = () => {
   }
 
   if (isUserValid && isEmailValid && isPasswordValid) {
-    const userData = [
+    const userData1 = [
       { user: user.value, email: email.value, password: password.value },
     ];
-    console.log('User Data:', userData);
+
+    console.log('User Data:', userData1);
 
     // Reset fields
     user.value = '';
@@ -147,7 +146,7 @@ body {
   padding-bottom: 20px;
   width: 384px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.5);
+  background:rgb(181, 174, 174);
 }
 
 a {
@@ -174,4 +173,7 @@ a {
   cursor: pointer;
   color: #007bff;
 }
+.forgot{
+  margin-left: -20px;
+} 
 </style>
